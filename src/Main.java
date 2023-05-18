@@ -3,7 +3,7 @@ import com.runnable.HR;
 import com.runnable.Technical;
 import com.runnable.Test;
 
-public class Main  {
+public class Main {
 
 
   public static void main(String[] args) throws InterruptedException {
@@ -17,19 +17,20 @@ public class Main  {
       throw new RuntimeException(e);
     }
 
-    Test test=new Test();
-    CodingTest codingTest=new CodingTest();
-    Technical technical=new Technical();
-    HR hr=new HR();
+    Test test = new Test();
+    CodingTest codingTest = new CodingTest();
+    Technical technical = new Technical();
+    HR hr = new HR();
 
 
-    Thread thread1=new Thread(test);
-    Thread thread2=new Thread(codingTest);
-    Thread thread3=new Thread(technical);
-    Thread thread4=new Thread(hr);
+    Thread thread1 = new Thread(test);
+    Thread thread2 = new Thread(codingTest);
+    Thread thread3 = new Thread(technical);
+    Thread thread4 = new Thread(hr);
 
 
-    thread1.start();;
+    thread1.start();
+    ;
     thread1.join();
     thread2.start();
     thread2.join();

@@ -1,6 +1,6 @@
 package com.runnable;
 
-public class HR implements Runnable{
+public class HR implements Runnable {
   @Override
   public void run() {
     System.out.println("HR Round Started");
@@ -8,12 +8,11 @@ public class HR implements Runnable{
 
     try {
       Thread.sleep(2000);
-    }
-    catch (InterruptedException e){
+    } catch (InterruptedException e) {
       throw new RuntimeException(e);
     }
 
 
   }
-  }
+}
 
